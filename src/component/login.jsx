@@ -2,11 +2,10 @@ import Header from "./header";
 import { Link } from "react-router-dom";
 
 export default function Login() {
-
   return (
     <>
       <Header />
-      <div className="artboard artboard-horizontal phone-8 dark:bg-slate-950">
+      <div className="artboard  artboard-horizontal phone-8 dark:bg-slate-950 bg-slate-100">
         <div className="hero min-h-screen min-w-full bg-base-200">
           <div className="hero-content justify-center items-center mobile:flex-col laptop:flex-row-reverse">
             <div className="text-center w-3/4 laptop:text-left">

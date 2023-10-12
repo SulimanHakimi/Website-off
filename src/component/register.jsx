@@ -3,8 +3,8 @@ import Header from "./header";
 export default function Register() {
   return (
     <>
-    <Header/>
-      <div className="artboard artboard-horizontal phone-8">
+      <Header />
+      <div className=" phone-8">
         <div className="hero min-h-screen min-w-full bg-base-200">
           <div className="hero-content justify-center items-center flex-col laptop:flex-row-reverse">
             <div className="text-center w-2/4 lg:text-left">

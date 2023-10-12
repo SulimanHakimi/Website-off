@@ -6,22 +6,19 @@ import Fof from "./component/404page";
 import Gallary from "./component/gallary";
 import { Profile } from "./component/profile";
 
-
 function App() {
   return (
     <>
-    <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="*" element={<Fof/>}></Route>
-          <Route path="/" element={<Homepage />}>
-          </Route>
+          <Route path="*" element={<Fof />}></Route>
+          <Route path="/" element={<Homepage />}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Register" element={<Register />}></Route>
-          <Route path="/gallary" element={<Gallary/>}></Route>
-          <Route path="/Profile" element={<Profile/>}></Route>
+          <Route path="/gallary" element={<Gallary />}></Route>
+          <Route path="/Profile" element={<Profile />}></Route>
         </Routes>
       </BrowserRouter>
-      
     </>
   );
 }

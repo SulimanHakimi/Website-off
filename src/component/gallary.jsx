@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./header";
 import Card from "./card";
 import Footer from "./footer";
+
 let data = [
   {
     id: "1",
@@ -10,7 +11,7 @@ let data = [
     price: "30$",
     discription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?",
-      nameOfPro:"T-Shirt"
+    nameOfPro: "T-Shirt",
   },
   {
     id: "2",
@@ -19,7 +20,7 @@ let data = [
     price: "50$",
     discription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?",
-      nameOfPro:"Shose"
+    nameOfPro: "Shose",
   },
   {
     id: "3",
@@ -28,7 +29,7 @@ let data = [
     price: "700$",
     discription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?",
-      nameOfPro:"Laptop"
+    nameOfPro: "Laptop",
   },
   {
     id: "4",
@@ -37,7 +38,7 @@ let data = [
     price: "20$",
     discription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?",
-      nameOfPro:"Cup"
+    nameOfPro: "Cup",
   },
   {
     id: "5",
@@ -46,7 +47,7 @@ let data = [
     price: "10$",
     discription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?",
-      nameOfPro:"Mouse"
+    nameOfPro: "Mouse",
   },
   {
     id: "6",
@@ -55,27 +56,27 @@ let data = [
     price: "1100$",
     discription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?",
-      nameOfPro:"TV"
+    nameOfPro: "TV",
   },
 ];
-const Gallary = () => {
+export default function Gallary() {
   return (
-    <div className="bg-slate-100">
-      <Header />
-      <div className=" grid desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
-        {data.map((item) => (
-          <Card
-            price={item.price}
-            img={item.imgSrc}
-            key={item.id}
-            discription={item.discription}
-            nameOfPro={item.nameOfPro}
-          />
-        ))}
+    <>
+      <div className="bg-slate-100">
+        <Header />
+        <div className=" grid desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
+          {data.map((item) => (
+            <Card
+              price={item.price}
+              img={item.imgSrc}
+              key={item.id}
+              discription={item.discription}
+              nameOfPro={item.nameOfPro}
+            />
+          ))}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
-};
-
-export default Gallary;
+}

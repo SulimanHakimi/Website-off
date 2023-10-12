@@ -4,12 +4,15 @@ export default function Footer() {
     <div>
       <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
+          <Link to="/">Home</Link>
+
+          <Link to="/gallary">Gallary</Link>
           <Link to="/Login" className="link link-hover">
             Login
           </Link>
-          <Link to="/Register" className="link link-hover">Register</Link>
+          <Link to="/Register" className="link link-hover">
+            Register
+          </Link>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">

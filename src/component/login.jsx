@@ -1,14 +1,18 @@
 import Header from "./header";
+import { Link } from "react-router-dom";
 
 export default function Login() {
+
   return (
     <>
-    <Header/>
+      <Header />
       <div className="artboard artboard-horizontal phone-8 dark:bg-slate-950">
         <div className="hero min-h-screen min-w-full bg-base-200">
-          <div className="hero-content justify-center items-center mobile:flex-col tablet:flex-row-reverse laptop:flex-row-reverse">
+          <div className="hero-content justify-center items-center mobile:flex-col laptop:flex-row-reverse">
             <div className="text-center w-3/4 laptop:text-left">
-              <h1 className="text-5xl font-bold dark:text-white">Join For First Time!</h1>
+              <h1 className="text-5xl font-bold dark:text-white">
+                Join For First Time!
+              </h1>
               <p className="py-6 dark:text-white">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
@@ -39,7 +43,11 @@ export default function Login() {
                   />
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary dark:text-white">Login</button>
+                  <Link to="/">
+                    <button className="btn btn-primary dark:text-white">
+                      Login
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

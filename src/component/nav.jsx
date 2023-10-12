@@ -7,7 +7,7 @@ const Nav = () => {
     <div>
       <ul className="menu justify-between flex laptop:gap-6 tablet:gap-2 mobile:hidden tablet:flex tablet:flex-row rounded-box">
         <li>
-          <Link to="/">
+        <Link to="/">
             <button>Home</button>
           </Link>
         </li>

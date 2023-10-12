@@ -3,7 +3,7 @@ import React from "react";
 const LoginedNav = () => {
   return (
     <div>
-      <ul className="menu hidden justify-between lg:menu-horizontal rounded-box">
+      <ul className="menu justify-between laptop:menu-horizontal rounded-box">
         <li>
           <button
             className=""

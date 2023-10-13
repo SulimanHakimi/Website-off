@@ -5,7 +5,7 @@ export default function Register() {
     <>
       <Header />
       <div className=" phone-8">
-        <div className="hero min-h-screen min-w-full bg-base-200">
+        <div className="hero min-h-screen min-w-full bg-slate-100">
           <div className="hero-content justify-center items-center flex-col laptop:flex-row-reverse">
             <div className="text-center w-2/4 lg:text-left">
               <h1 className="text-5xl font-bold">Join For First Time!</h1>

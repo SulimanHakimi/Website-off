@@ -27,9 +27,9 @@ export default function Photoghraphy() {
       ) : (
         <>
           <Header />
-          <div className="grid desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
+          <div className="grid bg-slate-100 desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
             {data.map((item) => (
-              <Link to={`/`}>
+              <Link to={`*`}>
                 <Photos
                   img={item.imgSrc}
                   key={data.id}

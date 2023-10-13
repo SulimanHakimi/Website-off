@@ -22,7 +22,9 @@ export default function DonationPage() {
     <>
       {loding ? (
         <div className="flex h-screen justify-center items-center">
-          loding...
+          <div className="flex items-center ">
+          <span className="loading loading-spinner loading-lg"></span>
+          </div>
         </div>
       ) : (
         <div className="bg-slate-100">

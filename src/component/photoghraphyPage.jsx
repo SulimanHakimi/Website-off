@@ -24,7 +24,7 @@ export default function PhotoghraphyPage() {
     <>
       {loding ? (
         <div className="flex h-screen justify-center items-center">
-          loding....
+           <span className="loading loading-spinner loading-lg"></span>
         </div>
       ) : (
         <>

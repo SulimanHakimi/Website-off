@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Header from "./header";
-import Card from "./card";
+import Card from "./shopeCard";
 import Footer from "./footer";
 import axios from "axios";
 
-export default function Gallary() {
+export default function Shope() {
   const [loding, setLoding] = useState(true);
 
   const [data, setData] = useState([]);
@@ -15,7 +15,9 @@ export default function Gallary() {
         setData(res.data.data);
         setLoding(false);
       })
-      .catch((erorr) => console.log(erorr));
+      .catch((erorr) => {
+        console.log(erorr);
+      });
   });
   return (
     <>

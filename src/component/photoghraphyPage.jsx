@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Header from "./header";
-import Photos from "./photos";
+import Photoghrapy from "./photoghrapy";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-export default function Photoghraphy() {
+export default function PhotoghraphyPage() {
   const [data, setData] = useState([]);
   const [loding, setLoding] = useState(true);
 
@@ -16,7 +16,9 @@ export default function Photoghraphy() {
         setData(res.data.data);
         setLoding(false);
       })
-      .catch((erorr) => console.log(erorr));
+      .catch((erorr) => {
+        console.log(erorr);
+      });
   });
   return (
     <>
@@ -30,7 +32,7 @@ export default function Photoghraphy() {
           <div className="grid bg-slate-100 desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
             {data.map((item) => (
               <Link to={`*`}>
-                <Photos
+                <Photoghrapy
                   img={item.imgSrc}
                   key={data.id}
                   place={item.place}

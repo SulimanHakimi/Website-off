@@ -1,12 +1,11 @@
 import Footer from "./footer";
 import Header from "./header";
-import MainContent from "./main";
 
 export default function Homepage() {
   return (
     <>
       <Header />
-      <MainContent />
+      <div className="hero min-h-screen laptop:flex-row  bg-afg bg-cover bg-center font-bold text-lime-800"></div>
       <Footer />
     </>
   );

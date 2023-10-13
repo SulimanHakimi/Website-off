@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Nav from "./nav";
+import { FiAlignJustify } from "react-icons/fi";
 
 export default function Header() {
   return (
@@ -9,7 +9,35 @@ export default function Header() {
           Suliman Hakimi
         </Link>
       </div>
-      <Nav />
+      <div>
+      <ul className="menu justify-between flex laptop:gap-6 tablet:gap-2 mobile:hidden tablet:flex tablet:flex-row rounded-box">
+        <li>
+        <Link to="/">
+            <button>Home</button>
+          </Link>
+        </li>
+        <li>
+          <Link to="/Shope">
+            <button>Shope</button>
+          </Link>
+        </li>
+        <li>
+          <Link to="/Photoghraphy">
+            <button>Photoghraphy</button>
+          </Link>
+        </li>
+        <li>
+          <Link to="/Donation"><button>Donation</button></Link>
+        </li>
+        <li>
+         <Link to="/Login"> <button>Login</button></Link>
+        </li>
+      </ul>
+
+      <button className="mobile:block tablet:hidden">
+        {<FiAlignJustify fontSize={25} />}
+      </button>
+    </div>
     </div>
   );
 }

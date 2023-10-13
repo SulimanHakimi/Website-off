@@ -6,12 +6,15 @@ export default function Footer() {
         <nav className="grid grid-flow-col gap-4">
           <Link to="/">Home</Link>
 
-          <Link to="/gallary">Gallary</Link>
+          <Link to="/Shope">Shope</Link>
+
+          <Link to="/photoghraphy" className="link link-hover">
+            Photoghrapy
+          </Link>
           <Link to="/Login" className="link link-hover">
             Login
-          </Link>
-          <Link to="/Register" className="link link-hover">
-            Register
+          </Link><Link to="/Register" className="link link-hover">
+          Register
           </Link>
         </nav>
         <nav>

@@ -1,4 +1,4 @@
-export default function Photos(pop) {
+export default function Photoghrapy(pop) {
   return (
     <>
       <div className="py-8">

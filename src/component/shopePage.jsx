@@ -21,11 +21,15 @@ export default function Shope() {
   });
   return (
     <>
-      {loding ? (
-        <div className="flex h-screen justify-center items-center">
-           <span className="loading loading-spinner loading-lg"></span>
+      {loding ?(
+        <div className="h-screen flex justify-center items-center">
+          <img
+            className="h-16 w-16"
+            src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif"
+            alt=""
+          />
         </div>
-      ) : (
+      ): (
         <>
           <div className="bg-slate-100">
             <Header />

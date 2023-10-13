@@ -21,10 +21,12 @@ export default function DonationPage() {
   return (
     <>
       {loding ? (
-        <div className="flex h-screen justify-center items-center">
-          <div className="flex items-center ">
-          <span className="loading loading-spinner loading-lg"></span>
-          </div>
+        <div className="h-screen flex justify-center items-center">
+          <img
+            className="h-16 w-16"
+            src="https://icons8.com/preloaders/preloaders/1488/Iphone-spinner-2.gif"
+            alt=""
+          />
         </div>
       ) : (
         <div className="bg-slate-100">

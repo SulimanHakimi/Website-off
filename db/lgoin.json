@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    },
+    {
+      "id": 2,
+      "name": "noor",
+      "lastname": "mwliae",
+      "email": "afg2@gmail.com",
+      "password": "noor23",
+      "state": "active"
+    },
+    {
+      "id": 3,
+      "name": "suliman",
+      "lastname": "hakimi",
+      "email": "afg3@gmail.com",
+      "password": "suliman123",
+      "state": "active"
+    },
+    {
+      "id": 4,
+      "name": "imran",
+      "lastname": "mohammadi",
+      "email": "afg4@gmail.com",
+      "password": "imran123",
+      "state": "active"
+    },
+    {
+      "id": 5,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    },
+    {
+      "id": 6,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    },
+    {
+      "id": 7,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    },
+    {
+      "id": 8,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    },
+    {
+      "id": 9,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    },
+    {
+      "id": 10,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    },
+    {
+      "id": 11,
+      "name": "ali",
+      "lastname": "mohammadi",
+      "email": "afg1@gmail.com",
+      "password": "ali123",
+      "state": "active"
+    }
+  ]
+}

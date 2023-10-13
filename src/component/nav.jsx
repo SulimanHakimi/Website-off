@@ -17,6 +17,11 @@ const Nav = () => {
           </Link>
         </li>
         <li>
+          <Link to="/Photoghraphy">
+            <button>Photoghraphy</button>
+          </Link>
+        </li>
+        <li>
           <Link to="/Register"><button>Register</button></Link>
         </li>
         <li>

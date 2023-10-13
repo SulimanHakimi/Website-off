@@ -3,7 +3,7 @@ import Nav from "./nav";
 
 export default function Header() {
   return (
-    <div className="navbar mb-1 bg-slate-100 shadow-md">
+    <div className="navbar bg-slate-100">
       <div className="flex-1">
         <Link to="/" className="font-semibold pl-2 normal-case text-xl">
           Suliman Hakimi

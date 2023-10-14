@@ -3,6 +3,7 @@ import Header from "./header";
 import Donation from "./donation";
 import Footer from "./footer";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function DonationPage() {
   const [donationData, setDonationData] = useState([]);
@@ -33,12 +34,14 @@ export default function DonationPage() {
           <Header />
           <div className="grid desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
             {donationData.map((item) => (
+             <Link to="*">
               <Donation
                 img={item.imgSrc}
                 donationPrice={item.donationPrice}
                 discription={item.discription}
                 key={item.id}
               />
+             </Link>
             ))}
           </div>
 

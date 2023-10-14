@@ -40,14 +40,30 @@ export default function Login() {
                     placeholder="*********"
                     className="input input-bordered"
                   />
+                  <div className="flex justify-between">
+                    <Link>
+                      <label className="label">
+                        <span className="label-text dark:text-white cursor-pointer">
+                          Forget Password
+                        </span>
+                      </label>
+                    </Link>
+                    <Link to="/Register">
+                      <label className="label">
+                        <span className="label-text dark:text-white underline cursor-pointer">
+                          Creat Account
+                        </span>
+                      </label>
+                    </Link>
+                  </div>
                 </div>
-                <div className="form-control mt-6">
-                  <Link to="/">
+                <Link to="/">
+                  <div className="form-control mt-2">
                     <button className="btn btn-primary dark:text-white">
                       Login
                     </button>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

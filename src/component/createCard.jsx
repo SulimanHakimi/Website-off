@@ -15,12 +15,12 @@ export default function CreateCard() {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
   const dataPost = () => {
-    axios
-      .post("http://localhost:4000/photographyData", inputData)
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => console.log(err));
+    // axios
+    //   .post("http://localhost:4000/photographyData", inputData)
+    //   .then((res) => {
+    //     console.log(res);
+    //   })
+    //   .catch((err) => console.log(err));
   };
 
   return (

@@ -4,6 +4,7 @@ import Header from "./header";
 import Photoghrapy from "./photoghrapy";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { AiOutlinePlus } from "react-icons/ai";
 
 export default function PhotoghraphyPage() {
   const [data, setData] = useState([]);
@@ -31,8 +32,18 @@ export default function PhotoghraphyPage() {
           />
         </div>
       ) : (
-        <>
+        <div className=" bg-slate-100">
           <Header />
+
+          <Link
+            to="/CreatePage"
+            className="rounded-md m-6 flex justify-center items-center  bg-slate-400 py-3 px-6 w-fit"
+          >
+            <button id="createCom">
+              <AiOutlinePlus />
+            </button>
+          </Link>
+
           <div className="grid bg-slate-100 desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
             {data.map((item) => (
               <Link to={`*`}>
@@ -47,7 +58,7 @@ export default function PhotoghraphyPage() {
             ))}
           </div>
           <Footer />
-        </>
+        </div>
       )}
     </>
   );

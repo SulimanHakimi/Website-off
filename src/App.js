@@ -6,6 +6,7 @@ import Fof from "./component/404page";
 import Shope from "./component/shopePage";
 import Photoghraphy  from "./component/photoghraphyPage";
 import DonationPage from "./component/donationPage";
+import CreateCard from "./component/createCard";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Register" element={<Register />}></Route>
           <Route path="/Shope" element={<Shope />}></Route>
+          <Route path="/CreatePage" element={<CreateCard/>}></Route>
           <Route path="/photoghraphy" element={<Photoghraphy />}></Route>
         </Routes>
       </BrowserRouter>

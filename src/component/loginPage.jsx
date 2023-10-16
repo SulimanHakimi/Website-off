@@ -50,7 +50,7 @@ export default function Login() {
                     </Link>
                     <Link to="/Register">
                       <label className="label">
-                        <span className="label-text dark:text-white underline cursor-pointer">
+                        <span className="label-text dark:text-white hover:underline cursor-pointer">
                           Creat Account
                         </span>
                       </label>

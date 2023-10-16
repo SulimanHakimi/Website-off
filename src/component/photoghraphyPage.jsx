@@ -14,7 +14,7 @@ export default function PhotoghraphyPage() {
     axios
       .get("http://localhost:4000/photographyData")
       .then((res) => {
-        setData(res.data.data);
+        setData(res.data);
         setLoding(false);
       })
       .catch((erorr) => {
@@ -37,7 +37,7 @@ export default function PhotoghraphyPage() {
 
           <Link
             to="/CreatePage"
-            className="rounded-md m-6 flex justify-center items-center  bg-slate-400 py-3 px-6 w-fit"
+            className="rounded-md m-6 ml-10 flex justify-center items-center  bg-slate-400 py-3 px-6 w-fit"
           >
             <button id="createCom">
               <AiOutlinePlus />

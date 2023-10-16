@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "./header";
 
 export default function Register() {
@@ -59,6 +60,20 @@ export default function Register() {
                     placeholder="*********"
                     className="input input-bordered"
                   />
+                  <div className="flex justify-between mt-2">
+                    <div className="flex items-center focus:outline-none">
+                      <input type="checkbox" />
+
+                      <label className="label">
+                        <span className="label-text">remmber me</span>
+                      </label>
+                    </div>
+                    <label className="label">
+                      <span className="label-text flex justify-end hover:underline">
+                        <Link to="/Login"> Already Have an Account</Link>
+                      </span>
+                    </label>
+                  </div>
                 </div>
                 <div className="form-control mt-6">
                   <button className="btn btn-primary">Register</button>

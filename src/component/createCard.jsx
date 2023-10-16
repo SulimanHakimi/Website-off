@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./header";
 import Footer from "./footer";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function CreateCard() {
   const [inputData, setInputData] = useState({
@@ -12,15 +13,22 @@ export default function CreateCard() {
     namePhotographar: "",
   });
   const Data = (e) => {
-    setInputData({ ...inputData, [e.target.name]: e.target.value });
+    setInputData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
   };
   const dataPost = () => {
-    // axios
-    //   .post("http://localhost:4000/photographyData", inputData)
-    //   .then((res) => {
-    //     console.log(res);
-    //   })
-    //   .catch((err) => console.log(err));
+    axios
+      .post("http://localhost:4000/photographyData", {
+        id: "10",
+        imgSrc: inputData.imgSrc,
+        place: inputData.place,
+        discription: inputData.discription,
+        namePhotographar: inputData.namePhotographar,
+      })
+      .then(() => {})
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -33,8 +41,8 @@ export default function CreateCard() {
               Image Source
             </label>
             <input
-              type="url"
-              name="imgsrc"
+              type="text"
+              name="imgSrc"
               onChange={Data}
               className="w-full h-8 focus:ring-transparent caret-blue-700 rounded-sm"
             />
@@ -59,8 +67,8 @@ export default function CreateCard() {
             </label>
             <input
               type="text"
-              onChange={Data}
               name="namePhotographar"
+              onChange={Data}
               className="w-full h-8 focus:ring-transparent caret-blue-700 rounded-sm"
             />
           </div>
@@ -76,12 +84,13 @@ export default function CreateCard() {
               className="focus:ring-transparent caret-blue-700 rounded-sm resize-none	"
             ></textarea>
           </div>
-          <button
-            className="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded"
+          <Link
             onClick={dataPost}
+            to="/Photoghraphy"
+            className="bg-slate-600 hover:bg-slate-700 text-center text-white font-bold py-2 px-4 rounded"
           >
             Create
-          </button>
+          </Link>
         </div>
       </div>
       <Footer />

@@ -11,7 +11,7 @@ function Donation(pop) {
             alt=""
           />
           <div className="p-2">
-            <p className=" text-left line-clamp-4 dark:text-white  font-semibold">
+            <p className=" text-left line-clamp-3 dark:text-white  font-semibold">
               {pop.discription}
             </p>
             <Link>

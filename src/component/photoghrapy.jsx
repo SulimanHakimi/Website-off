@@ -10,7 +10,7 @@ export default function Photoghrapy(pop) {
               <h2 className="font-bold  text-gray-600">{`Province: ${pop.place}`}</h2>
               <h2 className="font-bold text-gray-600">{`PHG: ${pop.namePhotographar}`}</h2>
             </div>
-            <p className="text-left line-clamp-4 dark:text-white my-2 font-semibold">
+            <p className="text-left line-clamp-3 dark:text-white my-2 font-semibold">
               {pop.discription}
             </p>
           </div>

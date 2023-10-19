@@ -11,7 +11,7 @@ export default function Shope() {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/shopeData")
+      .get("http://localhost:4002/shopeData")
       .then((res) => {
         setData(res.data.data);
         setLoding(false);

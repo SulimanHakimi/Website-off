@@ -10,7 +10,7 @@ export default function DonationPage() {
   const [loding, setLoding] = useState(true);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/donationData")
+      .get("http://localhost:4001/donationData")
       .then((res) => {
         setLoding(false);
         setDonationData(res.data.data);

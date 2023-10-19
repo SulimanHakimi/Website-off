@@ -21,7 +21,7 @@ export default function CreateCard() {
   const dataPost = () => {
     axios
       .post("http://localhost:4000/photographyData", {
-        id: "10",
+        id: "11",
         imgSrc: inputData.imgSrc,
         place: inputData.place,
         discription: inputData.discription,

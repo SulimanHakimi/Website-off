@@ -13,7 +13,7 @@ export default function Shope() {
     axios
       .get("http://localhost:4002/shopeData")
       .then((res) => {
-        setData(res.data.data);
+        setData(res.data);
         setLoding(false);
       })
       .catch((erorr) => {

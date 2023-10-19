@@ -1,42 +1,40 @@
 {
-  "donationData": {
-    "data": [
-      {
-        "id": "1",
-        "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/l/a/large-family-packages-1.jpg",
-        "donationPrice": "30$",
-        "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
-      },
-      {
-        "id": "2",
-        "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/p/a/package_2__1.jpg",
-        "donationPrice": "100$",
-        "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
-      },
-      {
-        "id": "3",
-        "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/s/m/small-family-packages.jpg",
-        "donationPrice": "40$",
-        "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
-      },
-      {
-        "id": "4",
-        "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/d/o/donate-and-let-aseel-decide.png",
-        "donationPrice": "300$",
-        "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
-      },
-      {
-        "id": "5",
-        "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/p/a/package_2__1.jpg",
-        "donationPrice": "100$",
-        "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
-      },
-      {
-        "id": "6",
-        "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/p/a/package_2__1.jpg",
-        "donationPrice": "100$",
-        "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
-      }
-    ]
-  }
+  "donationData": [
+    {
+      "id": "1",
+      "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/l/a/large-family-packages-1.jpg",
+      "donationPrice": "30$",
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
+    },
+    {
+      "id": "2",
+      "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/p/a/package_2__1.jpg",
+      "donationPrice": "100$",
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
+    },
+    {
+      "id": "3",
+      "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/s/m/small-family-packages.jpg",
+      "donationPrice": "40$",
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
+    },
+    {
+      "id": "4",
+      "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/d/o/donate-and-let-aseel-decide.png",
+      "donationPrice": "300$",
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
+    },
+    {
+      "id": "5",
+      "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/p/a/package_2__1.jpg",
+      "donationPrice": "100$",
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
+    },
+    {
+      "id": "6",
+      "imgSrc": "https://aseelapp.com/media/catalog/product/cache/f934372f90c133cedaa6876f81751bd1/p/a/package_2__1.jpg",
+      "donationPrice": "100$",
+      "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?"
+    }
+  ]
 }

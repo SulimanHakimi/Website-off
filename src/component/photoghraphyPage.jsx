@@ -37,7 +37,7 @@ export default function PhotoghraphyPage() {
 
           <Link
             to="/CreatePage"
-            className="rounded-md m-6 ml-10 flex justify-center items-center border-2 border-slate-200  hover:bg-slate-300 py-3 px-6 w-fit"
+            className="rounded-md m-6 tablet:ml-12 laptop:ml-10 mobile:ml-24 flex justify-center items-center border-2 border-slate-200  hover:bg-slate-300 py-3 px-6 w-fit"
           >
             <button id="createCom">
               <AiOutlinePlus />

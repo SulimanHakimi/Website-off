@@ -13,7 +13,7 @@ export default function DonationPage() {
       .get("http://localhost:4001/donationData")
       .then((res) => {
         setLoding(false);
-        setDonationData(res.data.data);
+        setDonationData(res.data)
       })
       .catch((err) => {
         console.log(err);

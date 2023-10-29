@@ -7,6 +7,7 @@ import Shope from "./component/shopePage";
 import Photoghraphy  from "./component/photoghraphyPage";
 import DonationPage from "./component/donationPage";
 import CreateCard from "./component/createCard";
+import LoginFigma from "./component/loginFigma";
 function App() {
   return (
     <>
@@ -18,6 +19,8 @@ function App() {
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Register" element={<Register />}></Route>
           <Route path="/Shope" element={<Shope />}></Route>
+          <Route path="/LoginFigma" element={<LoginFigma />}></Route>
+
           <Route path="/CreatePage" element={<CreateCard/>}></Route>
           <Route path="/photoghraphy" element={<Photoghraphy />}></Route>
         </Routes>

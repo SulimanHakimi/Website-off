@@ -13,29 +13,29 @@ export default function Header() {
         <ul className="menu justify-between flex laptop:gap-6 tablet:gap-2 mobile:hidden tablet:flex tablet:flex-row rounded-box">
           <li>
             <Link to="/">
-              <button>Home</button>
+              Home
             </Link>
           </li>
 
           <li>
             <Link to="/Photoghraphy">
-              <button>Photoghraphy</button>
+              Photoghraphy
             </Link>
           </li>
           <li>
             <Link to="/Shope">
-              <button>Shope</button>
+              Shope
             </Link>
           </li>
           <li>
             <Link to="/Donation">
-              <button>Donation</button>
+             Donation
             </Link>
           </li>
           <li>
             <Link to="/Login">
               {" "}
-              <button>Login</button>
+             Login
             </Link>
           </li>
         </ul>

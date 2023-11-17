@@ -1,0 +1,44 @@
+{
+    "photoghraphy": [{
+      "id": "1",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/d/da/Section_of_Herat_in_2009.jpg",
+      "place": "herat",
+      "discription": "Herat located in the north-western part of the country. Together with Badghis, Farah, and Ghor provinces, it makes up the north-western region of Afghanistan. Its primary city and administrative capital is Herat City. The province of Herat is divided into about 17 districts and contains over 2,000 villages. It has a population of about 3,780,000, making it the second most populated province in Afghanistan behind Kabul Province. The population is multi-ethnic but largely Persian-speaking. Herat dates back to the Avestan times and was traditionally known for its wine. The city has a number of historic sites, including the Herat Citadel and the Musalla Complex. During the Middle Ages Herat became one of the important cities of Khorasan, as it was known as the Pearl of Khorasan.The province of Herat shares a border with Iran in the west and Turkmenistan in the north, making it an important trading region. The Trans-Afghanistan Pipeline (TAPI) is expected to pass through Herat from Turkmenistan to Pakistan and India in the south. The province has two airports, one is the Herat International Airport in the capital of Herat and the other is at the Shindand Air Base, which is one of the largest military bases in Afghanistan. The Salma Dam which is fed by the Hari River is also located in this province.",
+      "namePhotographar": "saboor"
+    },
+    {
+      "id": "2",
+      "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRihsiqAf0dJHLsXjQWmyxcySnqMrtpJZFqqg&usqp=CAU",
+      "place": "laghman",
+      "discription": "Laghman located in the eastern part of the country. It has a population of about 502,148,[3] which is multi-ethnic and mostly a rural society. Laghman hosts a large number of historical landmarks, minarets, monuments, and other cultural relics that are manifestation of its old history and culture. The city of Mihtarlam serves as the capital of the province",
+      "namePhotographar": "shahid"
+    },
+    {
+      "id": "3",
+      "imgSrc": "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/YRXJP4WLDVLYLNLDLDVXO3HSAE.jpg",
+      "place": "kabul",
+      "discription": "Kabul situated in the east of the country, is one of the thirty-four provinces of Afghanistan. The capital of the province is Kabul city, which is Afghanistan's capital and largest city. The population of the Kabul Province is over 5.5 million people as of 2022,[3] of which over 85 percent live in urban areas. The current governor of the province is Qari Baryal. It borders the provinces of Parwan to the north, Kapisa to the north-east, Laghman to the east, Nangarhar to the south-east, Logar to the south, and Wardak to the west.",
+      "namePhotographar": "rafi"
+    },
+    {
+      "id": "4",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/d/da/Section_of_Herat_in_2009.jpg",
+      "place": "wardak",
+      "discription": "also called Wardag or Wardak, located in the central region of Afghanistan. It is divided into eight districts and has a population of approximately 500,000.[5][3] The capital of the province is Maidan Shar, while the most populous district in the province is Saydabad District. Wardak is known for one of its famous high peak mountain known as (Shah Foladi)",
+      "namePhotographar": "suliman"
+    },
+    {
+      "id": "5",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/d/da/Section_of_Herat_in_2009.jpg",
+      "place": "mazar",
+      "discription": "also known as Mazar-e Sharīf or simply Mazar, is the fourth-largest city in Afghanistan by population, with an estimated 500,207 residents in 2021.[1] It is the capital of Balkh province and is linked by highways with Kunduz in the east, Kabul in the southeast, Herat in the southwest and Termez, Uzbekistan in the north. It is about 55 km (34 mi) from the Uzbek border. The city is also a tourist attraction because of its famous shrines as well as the Islamic and Hellenistic archeological sites. The ancient city of Balkh is also nearby.The region around Mazar-i-Sharif has been historically part of Greater Khorasan and was controlled by the Tahirids followed by the Saffarids, Samanids, Ghaznavids, Ghurids, Ilkhanates, Timurids, and Khanate of Bukhara until 1751 when it became part of the Durrani Empire (although under autonomous emirs). Eventually the city passed to a few local rulers before becoming part of Afghanistan in 1849.Mazar-i-Sharif is the regional hub of northern Afghanistan, located in close proximity to both Uzbekistan and Tajikistan. It is also home to an international airport. It has the highest percentage of built-up land (91%)[2] of all the Afghan provincial capitals, and it has additional built-up area extending beyond the municipal boundary but forming a part of the larger urban area. It is also the lowest-lying major city in the country, about 357 metres (1,171 ft) above sea level. The city was spared the devastation that occurred in the country's other large cities during the Soviet–Afghan War and subsequent civil war, and was long regarded as one of the safest cities in the country.[3]",
+      "namePhotographar": "noor"
+    },
+    {
+      "id": "6",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/d/da/Section_of_Herat_in_2009.jpg",
+      "place": "logar",
+      "discription": "Logar located in the eastern section of the country. It is divided into 7 districts and contains hundreds of villages. Puli Alam is the capital of the province. As of 2021, Logar has a population of approximately 442,037 people, most of whom are ethnic Pashtuns and Tajiks.The Logar River enters the province through the west and leaves to the north.",
+      "namePhotographar": "ahmed"
+    }]
+    }

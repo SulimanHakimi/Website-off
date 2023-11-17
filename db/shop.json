@@ -1,5 +1,5 @@
 {
-  "shopeData": [
+   "shope":[
     {
       "id": "1",
       "imgSrc": "https://www.machinescreenprinters.com.au/wp-content/uploads/2021/10/alstyle_1301_royal.jpg",
@@ -42,5 +42,6 @@
       "discription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptate?",
       "nameOfPro": "TV"
     }
+
   ]
-}
+  }

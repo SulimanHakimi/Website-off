@@ -8,12 +8,14 @@ import Photoghraphy  from "./component/photoghraphyPage";
 import DonationPage from "./component/donationPage";
 import CreateCard from "./component/createCard";
 import LoginFigma from "./component/loginFigma";
+import EditPage from "./component/editPage";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="*" element={<Fof />}></Route>
+          <Route path="/editPage" element={<EditPage />}></Route>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/Donation" element={<DonationPage />}></Route>
           <Route path="/Login" element={<Login />}></Route>

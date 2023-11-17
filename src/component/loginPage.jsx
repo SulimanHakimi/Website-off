@@ -1,7 +1,46 @@
+import { useState, useEffect } from "react";
 import Header from "./header";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 export default function Login() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:2003/accountData")
+      .then((res) => {
+        setData(res.data);
+      })
+      .then((err) => {
+        console.log(err);
+      });
+  });
+
+  const [dataEmail, setDataEmail] = useState("");
+  const [dataPassword, setDataPassword] = useState("");
+  const [isLogin, setIsLogin] = useState(false);
+
+  const inputChangeEmail = (event) => {
+    setDataEmail(event.target.value);
+  };
+  const inputChangePassword = (event) => {
+    setDataPassword(event.target.value);
+  };
+  const checkInput = () => {
+    data.map((user) => {
+      if (user.email === dataEmail && user.password === dataPassword) {
+        setIsLogin(true);
+        alert("welcome");
+      } else {
+        setDataEmail("");
+        setDataPassword("");
+      }
+    });
+  };
+  const btnClick = () => {
+    checkInput();
+  };
+  console.log(dataEmail, dataPassword);
   return (
     <>
       <Header />
@@ -25,9 +64,12 @@ export default function Login() {
                     <span className="label-text dark:text-white">Email</span>
                   </label>
                   <input
+                    name="email"
                     type="email"
                     placeholder="email"
                     className="input input-bordered"
+                    onChange={inputChangeEmail}
+                    value={dataEmail}
                   />
                 </div>
 
@@ -38,7 +80,10 @@ export default function Login() {
                   <input
                     type="password"
                     placeholder="*********"
+                    name="password"
                     className="input input-bordered"
+                    value={dataPassword}
+                    onChange={inputChangePassword}
                   />
                   <div className="flex justify-between">
                     <Link>
@@ -57,13 +102,19 @@ export default function Login() {
                     </Link>
                   </div>
                 </div>
-                <Link to="/">
-                  <div className="form-control mt-2">
-                    <button className="btn btn-primary dark:text-white">
-                      Login
-                    </button>
-                  </div>
-                </Link>
+
+                {isLogin ? (
+                  <Link
+                    to="/"
+                    className="btn btn-primary bg-green-700 dark:text-white"
+                  >
+                    Login
+                  </Link>
+                ) : (
+                  <Link to="" className="btn btn-primary dark:text-white">
+                    Login
+                  </Link>
+                )}
               </div>
             </div>
           </div>

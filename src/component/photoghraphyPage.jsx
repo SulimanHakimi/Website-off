@@ -1,6 +1,6 @@
-import Footer from "./footer";
-import Header from "./header";
-import Photoghrapy from "./photoghrapy";
+import Footer from "./footer/footer";
+import Header from "./header/header";
+import Photoghrapy from "./photography/photoghrapy";
 import { Link } from "react-router-dom";
 import { AiOutlinePlus } from "react-icons/ai";
 import axios from "axios";
@@ -9,12 +9,15 @@ import { AppContext } from "../App";
 export default function PhotoghraphyPage() {
   const { isLogin } = useContext(AppContext);
   const [data, setData] = useState([]);
+  const [isLoding, setIsLoding] = useState(true);
+
   const date = new Date();
   useEffect(() => {
     axios
       .get("https://sulimanhakimi.github.io/json-files/photography.json")
       .then((res) => {
-        setData(res.data.photoghraphy)
+        setData(res.data.photoghraphy);
+        setIsLoding(false);
       })
       .then((err) => {
         console.log(err);
@@ -23,7 +26,7 @@ export default function PhotoghraphyPage() {
 
   return (
     <>
-      {isLogin? (
+      {isLogin ? (
         <>
           <div className=" bg-slate-100">
             <Header />
@@ -40,16 +43,26 @@ export default function PhotoghraphyPage() {
               <p className="pr-20 cursor-pointer text-lg font-semibold">{`Date: ${date.getFullYear()}/${date.getMonth()}/${date.getDay()}`}</p>
             </div>
             <div className="grid bg-slate-100 desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
-              {data?.map((item) => (
-                <Photoghrapy
-                  img={item.imgSrc}
-                  id={item.id}
-                  key={item.id}
-                  place={item.place}
-                  discription={item.discription}
-                  namePhotographar={item.namePhotographar}
-                />
-              ))}
+            {isLoding ? (
+              <>
+                <div className="flex justify-center items-center">
+                  <p className="text-2xl">Loding</p>
+                </div>
+              </>
+            ) : (
+              <>
+                {data.map((item) => (
+                  <Photoghrapy
+                    img={item.imgSrc}
+                    id={item.id}
+                    key={item.id}
+                    place={item.place}
+                    discription={item.discription}
+                    namePhotographar={item.namePhotographar}
+                  />
+                ))}
+              </>
+            )}
             </div>
             <Footer />
           </div>
@@ -58,17 +71,27 @@ export default function PhotoghraphyPage() {
         <div className=" bg-slate-100">
           <Header />
 
-          <div className="grid bg-slate-100 desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
-            {data.map((item) => (
-              <Photoghrapy
-                img={item.imgSrc}
-                id={item.id}
-                key={item.id}
-                place={item.place}
-                discription={item.discription}
-                namePhotographar={item.namePhotographar}
-              />
-            ))}
+          <div className="grid bg-slate-100 desktop:grid-cols-4 min-h-screen justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
+            {isLoding ? (
+              <>
+                <div className="flex justify-center items-center">
+                  <p className="text-2xl">Loding</p>
+                </div>
+              </>
+            ) : (
+              <>
+                {data.map((item) => (
+                  <Photoghrapy
+                    img={item.imgSrc}
+                    id={item.id}
+                    key={item.id}
+                    place={item.place}
+                    discription={item.discription}
+                    namePhotographar={item.namePhotographar}
+                  />
+                ))}
+              </>
+            )}
           </div>
           <Footer />
         </div>

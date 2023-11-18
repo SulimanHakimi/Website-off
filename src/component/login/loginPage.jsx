@@ -1,11 +1,11 @@
-import { useState,  useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useContext } from "react";
-import Header from "./header";
+import Header from "../header/header";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { AppContext } from "../App";
+import { AppContext } from "../../App";
 export default function Login() {
-  const { isLogin,setIsLogin } = useContext(AppContext);
+  const { isLogin, setIsLogin } = useContext(AppContext);
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -47,8 +47,8 @@ export default function Login() {
       <Header />
       <div className="artboard  artboard-horizontal phone-8 dark:bg-slate-950 bg-slate-100">
         <div className="hero min-h-screen min-w-full">
-          <div className="hero-content justify-center items-center mobile:flex-col laptop:flex-row-reverse">
-            <div className="text-center w-3/4 laptop:text-left">
+          <div className="hero-content justify-center items-center mobile:w-full laptop:flex-row-reverse">
+          <div className="text-center mobile:hidden w-3/4 laptop:text-left">
               <h1 className="text-5xl font-bold dark:text-white">
                 Join For First Time!
               </h1>
@@ -58,7 +58,7 @@ export default function Login() {
                 repudiandae et a id nisi.
               </p>
             </div>
-            <div className="card flex-shrink-0 w-full laptop:max-w-sm mobile:max-w-xs  shadow-2xl bg-base-100">
+            <div className="card flex-shrink-0 w-full laptop:max-w-sm mobile:h-1/3  shadow-2xl bg-base-100">
               <div className="card-body">
                 <div className="form-control">
                   <label className="label">

@@ -1,7 +1,7 @@
 import React from "react";
-import google from "./../assets/img/341350527_1184363148892088_4003333439020170582_n 2.png";
-import meta from "./../assets/img/341350527_1184363148892088_4003333439020170582_n 3.png";
-import apple from "./../assets/img/341350527_1184363148892088_4003333439020170582_n 4.png";
+import google from "./../../assets/img/341350527_1184363148892088_4003333439020170582_n 2.png";
+import meta from "./../../assets/img/341350527_1184363148892088_4003333439020170582_n 3.png";
+import apple from "./../../assets/img/341350527_1184363148892088_4003333439020170582_n 4.png";
 
 function LoginFigma() {
   return (

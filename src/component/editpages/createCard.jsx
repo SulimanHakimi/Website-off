@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "../header/header";
+import Footer from "../footer/footer";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -20,7 +20,7 @@ export default function CreateCard() {
   };
   const dataPost = () => {
     axios
-      .post("http://localhost:2000/photoghraphy", {
+      .post("https://sulimanhakimi.github.io/json-files/photography.json", {
         id: "7",
         imgSrc: inputData.imgSrc,
         place: inputData.place,

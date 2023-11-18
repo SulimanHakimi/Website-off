@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "./header";
+import Header from "../header/header";
 
 export default function Register() {
   return (
@@ -8,7 +8,7 @@ export default function Register() {
       <div className=" phone-8">
         <div className="hero min-h-screen min-w-full bg-slate-100">
           <div className="hero-content justify-center items-center flex-col laptop:flex-row-reverse">
-            <div className="text-center w-2/4 lg:text-left">
+            <div className="text-center mobile:hidden w-2/4 lg:text-left">
               <h1 className="text-5xl font-bold">Join For First Time!</h1>
               <p className="py-6">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut

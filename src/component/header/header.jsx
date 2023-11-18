@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { FiAlignJustify } from "react-icons/fi";
 import { useContext } from "react";
-import { AppContext } from "../App";
+import { AppContext } from "../../App";
 
 export default function Header() {
   const { isLogin, setIsLogin } = useContext(AppContext);
-const logOut=()=>{
-setIsLogin(false)
-}
+  const logOut = () => {
+    setIsLogin(false);
+  };
   return (
     <div className="navbar bg-slate-100">
       <div className="flex-1">
@@ -32,7 +32,9 @@ setIsLogin(false)
           </li>
           <li>
             {isLogin ? (
-              <Link to="/photoghraphy" onClick={logOut}>Logout</Link>
+              <Link to="/photoghraphy" onClick={logOut}>
+                Logout
+              </Link>
             ) : (
               <Link to="/Login">Login</Link>
             )}

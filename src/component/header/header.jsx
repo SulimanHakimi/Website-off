@@ -5,9 +5,6 @@ import { AppContext } from "../../App";
 
 export default function Header() {
   const { isLogin, setIsLogin } = useContext(AppContext);
-  const logOut = () => {
-    setIsLogin(false);
-  };
   return (
     <div className="navbar bg-slate-100">
       <div className="flex-1">
@@ -32,7 +29,7 @@ export default function Header() {
           </li>
           <li>
             {isLogin ? (
-              <Link to="/photoghraphy" onClick={logOut}>
+              <Link to="/photoghraphy" onClick={setIsLogin(false)}>
                 Logout
               </Link>
             ) : (
@@ -40,10 +37,10 @@ export default function Header() {
             )}
           </li>
         </ul>
-
-        <button className="mobile:block tablet:hidden">
-          {<FiAlignJustify fontSize={25} />}
+        <button className="mobile:block tablet:hidden" >
+          <FiAlignJustify fontSize={25} />
         </button>
+        
       </div>
     </div>
   );

@@ -1,14 +1,37 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "../header/header";
+import axios from "axios";
 
 export default function Register() {
+  const [rejData, setRejData] = useState("");
+  const data = (e) => {
+    setRejData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  console.log(rejData);
+  const register = () => {
+    axios
+      .post("http://localhost:2000/accountData", {
+        id: 5,
+        name: rejData.name,
+        lastname: rejData.famliyName,
+        email: rejData.email,
+        password: rejData.password,
+        state: "active",
+      })
+      .then((res) => console.log("rej succes"));
+    console.log(rejData);
+  };
   return (
     <>
       <Header />
       <div className=" phone-8">
         <div className="hero min-h-screen min-w-full bg-slate-100">
           <div className="hero-content justify-center items-center flex-col laptop:flex-row-reverse">
-            <div className="text-center mobile:hidden w-2/4 lg:text-left">
+            <div className="text-center mobile:hidden laptop:block w-2/4 lg:text-left">
               <h1 className="text-5xl font-bold">Join For First Time!</h1>
               <p className="py-6">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
@@ -25,6 +48,8 @@ export default function Register() {
                   <input
                     type="text"
                     placeholder="name"
+                    name="name"
+                    onChange={data}
                     className="input input-bordered"
                   />
                 </div>
@@ -36,6 +61,8 @@ export default function Register() {
                   <input
                     type="text"
                     placeholder="famliy"
+                    name="famliyName"
+                    onChange={data}
                     className="input input-bordered"
                   />
                 </div>
@@ -46,6 +73,8 @@ export default function Register() {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    onChange={data}
                     placeholder="email"
                     className="input input-bordered"
                   />
@@ -57,7 +86,9 @@ export default function Register() {
                   </label>
                   <input
                     type="password"
+                    name="password"
                     placeholder="*********"
+                    onChange={data}
                     className="input input-bordered"
                   />
                   <div className="flex justify-between mt-2">
@@ -76,7 +107,9 @@ export default function Register() {
                   </div>
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Register</button>
+                  <button className="btn btn-primary" onClick={register}>
+                    Register
+                  </button>
                 </div>
               </div>
             </div>

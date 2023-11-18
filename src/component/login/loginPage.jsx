@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useContext } from "react";
 import Header from "../header/header";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axios  from "axios";
 import { AppContext } from "../../App";
 export default function Login() {
   const { isLogin, setIsLogin } = useContext(AppContext);
@@ -11,12 +11,10 @@ export default function Login() {
   useEffect(() => {
     axios
       .get("https://sulimanhakimi.github.io/json-files/login.json")
-      .then((res) => {
-        setData(res.data.accountData);
-      })
-      .then((err) => {
-        console.log(err);
-      });
+      .then(res=>setData(res.data.accoutData))
+      .then((err) => 
+        console.log(err)
+      );
   });
 
   const [dataEmail, setDataEmail] = useState("");
@@ -41,14 +39,13 @@ export default function Login() {
   const btnClick = () => {
     checkInput();
   };
-  console.log(dataEmail, dataPassword);
   return (
     <>
       <Header />
       <div className="artboard  artboard-horizontal phone-8 dark:bg-slate-950 bg-slate-100">
         <div className="hero min-h-screen min-w-full">
           <div className="hero-content justify-center items-center mobile:w-full laptop:flex-row-reverse">
-          <div className="text-center mobile:hidden w-3/4 laptop:text-left">
+          <div className="text-center mobile:hidden laptop:block w-3/4 laptop:text-left">
               <h1 className="text-5xl font-bold dark:text-white">
                 Join For First Time!
               </h1>

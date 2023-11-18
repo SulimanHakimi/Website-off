@@ -1,13 +1,13 @@
 import axios from "axios";
 import { Link } from "react-router-dom";
 export default function Photoghrapy(pop) {
-  const onDelete = (e, id) => {
-    e.preventDefault();
-    axios
-      .delete(`http://localhost:2000/photoghraphy/${id}`)
-      .then((res) => console.log("succes"))
-      .then((err) => console.log(err));
-  };
+  // const onDelete = (e, id) => {
+  //   e.preventDefault();
+  //   axios
+  //     .delete(`http://localhost:2000/photoghraphy/${id}`)
+  //     .then((res) => console.log("succes"))
+  //     .then((err) => console.log(err));
+  // };
  
 
   return (
@@ -35,7 +35,7 @@ export default function Photoghrapy(pop) {
               </button>
             </Link>
             <button
-              onClick={(e) => onDelete(e, pop.id)}
+              // onClick={(e) => onDelete(e, pop.id)}
               className="bg-red-800 hover:shadow-2xl hover:shadow-red-900 hover:text-black text-white px-5 py-2 rounded-md"
             >
               Delete

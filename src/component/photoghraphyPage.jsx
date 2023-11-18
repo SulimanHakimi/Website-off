@@ -14,7 +14,7 @@ export default function PhotoghraphyPage() {
     axios
       .get("https://sulimanhakimi.github.io/json-files/photography.json")
       .then((res) => {
-        setData(res.data);
+        setData(res.data.photoghraphy)
       })
       .then((err) => {
         console.log(err);
@@ -40,7 +40,7 @@ export default function PhotoghraphyPage() {
               <p className="pr-20 cursor-pointer text-lg font-semibold">{`Date: ${date.getFullYear()}/${date.getMonth()}/${date.getDay()}`}</p>
             </div>
             <div className="grid bg-slate-100 desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
-              {data.map((item) => (
+              {data?.map((item) => (
                 <Photoghrapy
                   img={item.imgSrc}
                   id={item.id}

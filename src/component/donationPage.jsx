@@ -12,7 +12,7 @@ export default function DonationPage() {
     axios
       .get("https://sulimanhakimi.github.io/json-files/donation.json")
       .then((res) => {
-        setData(res.data);
+        setData(res.data.donationData);
       })
       .then((err) => {
         console.log(err);

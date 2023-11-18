@@ -11,7 +11,7 @@ export default function Shope() {
     axios
       .get("https://sulimanhakimi.github.io/json-files/shop.json")
       .then((res) => {
-        setData(res.data);
+        setData(res.data.shope);
       })
       .then((err) => {
         console.log(err);

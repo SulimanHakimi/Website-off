@@ -12,7 +12,7 @@ export default function Login() {
     axios
       .get("https://sulimanhakimi.github.io/json-files/login.json")
       .then((res) => {
-        setData(res.data);
+        setData(res.data.accountData);
       })
       .then((err) => {
         console.log(err);

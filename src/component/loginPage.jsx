@@ -10,7 +10,7 @@ export default function Login() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:2003/accountData")
+      .get("https://sulimanhakimi.github.io/json-files/login.json")
       .then((res) => {
         setData(res.data);
       })

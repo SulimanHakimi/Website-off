@@ -10,7 +10,7 @@ export default function DonationPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:2002/donationData")
+      .get("https://sulimanhakimi.github.io/json-files/donation.json")
       .then((res) => {
         setData(res.data);
       })

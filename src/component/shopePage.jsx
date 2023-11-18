@@ -9,7 +9,7 @@ export default function Shope() {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:2001/shope")
+      .get("https://sulimanhakimi.github.io/json-files/shop.json")
       .then((res) => {
         setData(res.data);
       })

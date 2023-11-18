@@ -12,7 +12,7 @@ export default function PhotoghraphyPage() {
   const date = new Date();
   useEffect(() => {
     axios
-      .get("http://localhost:2000/photoghraphy")
+      .get("https://sulimanhakimi.github.io/json-files/photography.json")
       .then((res) => {
         setData(res.data);
       })

@@ -8,10 +8,15 @@ import Photoghraphy  from "./component/photoghraphyPage";
 import DonationPage from "./component/donationPage";
 import CreateCard from "./component/createCard";
 import LoginFigma from "./component/loginFigma";
+import { createContext , useState} from "react";
 import EditPage from "./component/editPage";
+export const AppContext = createContext(null)
 function App() {
+  const [isLogin, setIsLogin] = useState(false);
+
   return (
     <>
+   <AppContext.Provider value={{isLogin,setIsLogin}}>
       <BrowserRouter>
         <Routes>
           <Route path="*" element={<Fof />}></Route>
@@ -22,11 +27,11 @@ function App() {
           <Route path="/Register" element={<Register />}></Route>
           <Route path="/Shope" element={<Shope />}></Route>
           <Route path="/LoginFigma" element={<LoginFigma />}></Route>
-
           <Route path="/CreatePage" element={<CreateCard/>}></Route>
           <Route path="/photoghraphy" element={<Photoghraphy />}></Route>
         </Routes>
       </BrowserRouter>
+      </AppContext.Provider>
     </>
   );
 }

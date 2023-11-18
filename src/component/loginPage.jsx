@@ -1,8 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState,  useEffect } from "react";
+import { useContext } from "react";
 import Header from "./header";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { AppContext } from "../App";
 export default function Login() {
+  const { isLogin,setIsLogin } = useContext(AppContext);
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -18,7 +21,6 @@ export default function Login() {
 
   const [dataEmail, setDataEmail] = useState("");
   const [dataPassword, setDataPassword] = useState("");
-  const [isLogin, setIsLogin] = useState(false);
 
   const inputChangeEmail = (event) => {
     setDataEmail(event.target.value);
@@ -30,7 +32,6 @@ export default function Login() {
     data.map((user) => {
       if (user.email === dataEmail && user.password === dataPassword) {
         setIsLogin(true);
-        alert("welcome");
       } else {
         setDataEmail("");
         setDataPassword("");
@@ -105,13 +106,18 @@ export default function Login() {
 
                 {isLogin ? (
                   <Link
+                    onClick={btnClick}
                     to="/"
                     className="btn btn-primary bg-green-700 dark:text-white"
                   >
                     Login
                   </Link>
                 ) : (
-                  <Link to="" className="btn btn-primary dark:text-white">
+                  <Link
+                    onClick={btnClick}
+                    to=""
+                    className="btn btn-primary dark:text-white"
+                  >
                     Login
                   </Link>
                 )}

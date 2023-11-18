@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { FiAlignJustify } from "react-icons/fi";
+import { useContext } from "react";
+import { AppContext } from "../App";
 
 export default function Header() {
+  const { isLogin, setIsLogin } = useContext(AppContext);
+const logOut=()=>{
+setIsLogin(false)
+}
   return (
     <div className="navbar bg-slate-100">
       <div className="flex-1">
@@ -12,31 +18,24 @@ export default function Header() {
       <div>
         <ul className="menu justify-between flex laptop:gap-6 tablet:gap-2 mobile:hidden tablet:flex tablet:flex-row rounded-box">
           <li>
-            <Link to="/">
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
 
           <li>
-            <Link to="/Photoghraphy">
-              Photoghraphy
-            </Link>
+            <Link to="/Photoghraphy">Photoghraphy</Link>
           </li>
           <li>
-            <Link to="/Shope">
-              Shope
-            </Link>
+            <Link to="/Shope">Shope</Link>
           </li>
           <li>
-            <Link to="/Donation">
-             Donation
-            </Link>
+            <Link to="/Donation">Donation</Link>
           </li>
           <li>
-            <Link to="/Login">
-              {" "}
-             Login
-            </Link>
+            {isLogin ? (
+              <Link to="/photoghraphy" onClick={logOut}>Logout</Link>
+            ) : (
+              <Link to="/Login">Login</Link>
+            )}
           </li>
         </ul>
 

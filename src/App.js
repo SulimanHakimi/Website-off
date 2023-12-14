@@ -10,9 +10,7 @@ import CreateCard from "./component/editpages/createCard";
 import LoginFigma from "./component/login/loginFigma";
 import { createContext, useState } from "react";
 import EditPage from "./component/editpages/editPage";
-export const AppContext = createContext(null);
 function App() {
-  const [isLogin, setIsLogin] = useState(false);
 
   return (
     <>

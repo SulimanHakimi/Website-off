@@ -4,7 +4,7 @@ function Donation(pop) {
   return (
     <>
       <div className="px-4 my-6 dark:bg-slate-950">
-        <div className=" w-72 hover:opacity-70 bg-gray-100 shadow-xl flex flex-col overflow-hidden rounded-lg cursor-pointer">
+        <div className=" w-72 hover:opacity-70 shadow-xl flex flex-col overflow-hidden rounded-lg cursor-pointer">
           <img
             className="w-72 h-48 object-center	 object-cover "
             src={pop.img}

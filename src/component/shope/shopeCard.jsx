@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Card(pop) {
   return (
-    <div className="px-4 my-6 dark:bg-slate-950 hover:opacity-70">
+    <div className="px-4 my-6 dark:bg-slate-900 hover:opacity-70">
       <div className=" w-72 bg-gray-100 shadow-xl flex flex-col overflow-hidden rounded-lg cursor-pointer">
         <img className="w-72 h-48 object-cover" src={pop.img} alt="" />
         <div className="p-2">

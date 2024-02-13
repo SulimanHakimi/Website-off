@@ -17,13 +17,11 @@ export default function Register() {
       .post("http://localhost:2000/accountData", {
         id: 5,
         name: rejData.name,
-        lastname: rejData.famliyName,
         email: rejData.email,
         password: rejData.password,
         state: "active",
       })
       .then((res) => console.log("rej succes"));
-    console.log(rejData);
   };
   return (
     <>
@@ -49,19 +47,6 @@ export default function Register() {
                     type="text"
                     placeholder="name"
                     name="name"
-                    onChange={data}
-                    className="input input-bordered"
-                  />
-                </div>
-
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Famliy Name</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="famliy"
-                    name="famliyName"
                     onChange={data}
                     className="input input-bordered"
                   />

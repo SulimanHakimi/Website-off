@@ -6,7 +6,7 @@ export default function Homepage() {
   return (
     <>
       <Header />
-      <div className="hero min-h-screen flex laptop:flex-row bg-cover bg-center font-bold text-lime-800">
+      <div className="hero min-h-screen flex bg-main laptop:flex-row bg bg-cover bg-center font-bold text-lime-800">
         <div className="w-1/2 h-screen flex justify-center items-center "></div>
         <div className="w-1/2 h-screen flex justify-center items-center ">
           <img

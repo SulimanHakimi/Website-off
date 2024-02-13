@@ -1,21 +1,16 @@
-import { useState, useEffect } from "react";
-import { useContext } from "react";
+import { useState } from "react";
 import Header from "../header/header";
 import { Link } from "react-router-dom";
-import axios  from "axios";
-import { AppContext } from "../../App";
+// import axios from "axios";
 export default function Login() {
-  const { isLogin, setIsLogin } = useContext(AppContext);
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("https://sulimanhakimi.github.io/json-files/login.json")
-      .then(res=>setData(res.data.accoutData))
-      .then((err) => 
-        console.log(err)
-      );
-  });
+  // useEffect(() => {
+  //   axios
+  //     // .get("https://sulimanhakimi.github.io/json-files/login.json")
+  //     .then((res) => setData(res.data.accoutData))
+  //     .then((err) => console.log(err));
+  // });
 
   const [dataEmail, setDataEmail] = useState("");
   const [dataPassword, setDataPassword] = useState("");
@@ -26,26 +21,15 @@ export default function Login() {
   const inputChangePassword = (event) => {
     setDataPassword(event.target.value);
   };
-  const checkInput = () => {
-    data.map((user) => {
-      if (user.email === dataEmail && user.password === dataPassword) {
-        setIsLogin(true);
-      } else {
-        setDataEmail("");
-        setDataPassword("");
-      }
-    });
-  };
-  const btnClick = () => {
-    checkInput();
-  };
+
+  const btnClick = () => {};
   return (
     <>
       <Header />
       <div className="artboard  artboard-horizontal phone-8 dark:bg-slate-950 bg-slate-100">
         <div className="hero min-h-screen min-w-full">
           <div className="hero-content justify-center items-center mobile:w-full laptop:flex-row-reverse">
-          <div className="text-center mobile:hidden laptop:block w-3/4 laptop:text-left">
+            <div className="text-center mobile:hidden laptop:block w-2/4 laptop:text-left">
               <h1 className="text-5xl font-bold dark:text-white">
                 Join For First Time!
               </h1>
@@ -101,23 +85,13 @@ export default function Login() {
                   </div>
                 </div>
 
-                {isLogin ? (
-                  <Link
-                    onClick={btnClick}
-                    to="/"
-                    className="btn btn-primary bg-green-700 dark:text-white"
-                  >
-                    Login
-                  </Link>
-                ) : (
-                  <Link
-                    onClick={btnClick}
-                    to=""
-                    className="btn btn-primary dark:text-white"
-                  >
-                    Login
-                  </Link>
-                )}
+                <Link
+                  onClick={btnClick}
+                  to="/"
+                  className="btn btn-primary bg-green-700 dark:text-white"
+                >
+                  Login
+                </Link>
               </div>
             </div>
           </div>

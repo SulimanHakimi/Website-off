@@ -4,6 +4,7 @@ import Footer from "./footer/footer";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Loding from "./loding/loding";
 
 export default function Shope() {
   const [isLoding, setIsLoding] = useState(true);
@@ -11,10 +12,10 @@ export default function Shope() {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://sulimanhakimi.github.io/json-files/shop.json")
+      .get("https://sulimanhakimi.github.io/appData/shope.json")
       .then((res) => {
         setData(res.data.shope);
-        setIsLoding(false)
+        setIsLoding(false);
       })
       .then((err) => {
         console.log(err);
@@ -25,16 +26,11 @@ export default function Shope() {
     <>
       <div className="bg-slate-100">
         <Header />
-        <div className=" grid desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
-          {isLoding ? (
-            <>
-              <div className="flex justify-center items-center">
-                <p className="text-2xl">Loding</p>
-              </div>
-            </>
-          ) : (
-            <>
-              {" "}
+        {isLoding ? (
+          <Loding/>
+        ) : (
+          <>
+            <div className=" grid desktop:grid-cols-4 justify-items-center laptop:grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1">
               {data.map((item) => (
                 <Link to="#">
                   <Card
@@ -45,10 +41,10 @@ export default function Shope() {
                     nameOfPro={item.nameOfPro}
                   />
                 </Link>
-              ))}
-            </>
-          )}
-        </div>
+              ))}{" "}
+            </div>
+          </>
+        )}
         <Footer />
       </div>
     </>
